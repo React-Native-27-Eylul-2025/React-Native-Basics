@@ -17,9 +17,12 @@ export default function Home(){
           <Button title="Azalt" onPress={() => setState(state - 1)} />
         </View>
         <Button title="Sıfırla" onPress={() => setState(0)} />
-            <Link href={"/search"} style={{backgroundColor: "pink", padding: 8, borderRadius: 6}}>
-                <Text style={{color: "green", fontSize: 18}}>Search Ekranına Git</Text>
-            </Link>
+        <Link href={"/search"} style={{backgroundColor: "pink", padding: 8, borderRadius: 6}}>
+            <Text style={{color: "green", fontSize: 18}}>Search Ekranına Git</Text>
+        </Link>
+        <Link href={"/user"} style={{backgroundColor: "lightblue", padding: 8, borderRadius: 6, marginTop: 12}}>
+            <Text style={{color: "darkblue", fontSize: 18}}>User Ekranına Git</Text>
+        </Link>
       </View>
     );
 }

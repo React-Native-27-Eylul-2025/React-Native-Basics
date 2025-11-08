@@ -19,7 +19,8 @@ export default function Search(){
     
     return (
         <FlatList
-            style={{backgroundColor: "black"}}
+            contentInsetAdjustmentBehavior="automatic"
+            style={{backgroundColor: "white"}}
             data={categories}
             renderItem={({item}) => {
                 return (
