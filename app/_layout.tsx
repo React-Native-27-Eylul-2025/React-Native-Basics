@@ -9,14 +9,6 @@ export default function Layout() {
       <Stack.Screen
         name="search"
         options={{
-          // header: () => {
-          //   return (
-          //     <View style={{ backgroundColor: "black", paddingTop: 90 }}>
-          //       <Text style={{color: "white", fontSize: 32, fontWeight: "700",textAlign: "center"}}>Search</Text>
-          //       <TextInput style={{backgroundColor: "white", marginHorizontal: 8, marginVertical: 24, padding: 16, borderRadius: 4}} placeholder="Artist, song or playlist" />
-          //     </View>
-          //   );
-          // },
           title: "Search",
           headerLargeTitle: true,
           headerSearchBarOptions: {
@@ -24,6 +16,11 @@ export default function Layout() {
           }
         }}
       />
+      <Stack.Screen name="detay" options={{
+          headerStyle: { backgroundColor: '#4a90e2' },
+          headerTintColor: '#fff',
+          headerTitleStyle: { fontWeight: 'bold' },
+      }} />
       <Stack.Screen name="user" />
     </Stack>
   );
